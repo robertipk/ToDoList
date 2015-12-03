@@ -1,8 +1,10 @@
-INDEX
-
-<% @items.each do |item| %>
-	<h2><%= link_to item.title, item_path(item) %></h2>
-	<p><%= item.description %></h2>
-<% end %>
+<% if @items == nil %>
+	<p> Hello please log in! </p>
+<% else %>
+	<% @items.each do |item| %>
+		<h2><%= link_to item.title, item_path(item) %></h2>
+		<p><%= item.description %></h2>
+	<% end %>
+<% end %>	
 
 <p><%= link_to "New Item", new_item_path %></p>
