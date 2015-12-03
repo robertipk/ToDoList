@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+gem 'devise', '~> 3.5', '>= 3.5.2'
 gem 'simple_form', '~> 3.2'
 gem 'rails', '4.2.3'
 gem 'sqlite3'
